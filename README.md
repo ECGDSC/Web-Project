@@ -9,7 +9,7 @@
 
 ## HTML boilerplate:
 Explaination for the boilerplate: [link](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/)
-
+```HTML
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,3 +22,4 @@ Explaination for the boilerplate: [link](https://www.freecodecamp.org/news/basic
     <body>
     </body>
 </html>
+```
