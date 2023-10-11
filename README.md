@@ -11,5 +11,5 @@
 Explaination for the boilerplate: [link](https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/)
 
 ## Image for example floor code:
-[Dowload and save it in the folder you save your code file in](https://i.imgur.com/ZYsNEia.png)
+[Dowload and save it in the folder you save your code file in](https://imgur.com/ZYsNEia)
 
