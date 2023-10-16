@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make this div the entire page so the button can use the percentage of the page's size
+so the button sizes change when we resize the window */
+#Floor{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-image: url(image/Example_floor_plan.png);
+
+}
+
+/* Room 100 */
+
+.Left_top_room.active{
+    background:red;
+    color: white;
+    width: 40%;
+    height: 28%;
+    top: 18%;
+    left: 5%;
+    border: transparent;
+}
+.Left_top_room{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 40%;
+    height: 28%;
+    top: 18%;
+    left: 5%;
+    border: transparent;
+}
+
+/* Room 101 */
+
+.Left_bottom_room.active{
+    background:red;
+    color: white;
+    width: 31%;
+    height: 42%;
+    bottom: 6%;
+    left: 7%;
+    border: transparent;
+}
+.Left_bottom_room{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 31%;
+    height: 42%;
+    bottom: 6%;
+    left: 7%;
+    border: transparent;
+}
+
+/* Room 102 */
+
+.Right_top_room.active{
+    background:red;
+    color: white;
+    width: 33%;
+    height: 36%;
+    top: 19%;
+    right: 5%;
+    border: transparent;
+}
+.Right_top_room{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 33%;
+    height: 36%;
+    top: 19%;
+    right: 5%;
+    border: transparent;
+}
+
+/* Room 103 */
+
+.Right_bottom_room.active{
+    background:red;
+    color: white;
+    width: 28%;
+    height: 34%;
+    bottom: 6%;
+    right: 12%;
+    border: transparent;
+}
+.Right_bottom_room{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 28%;
+    height: 34%;
+    bottom: 6%;
+    right: 12%;
+    border: transparent;
+}
