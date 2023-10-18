@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <titl>FlaskApp Demo</titl>
+    <style>
+        .user {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        table, th, td {
+            border: 1px solid;
+        } 
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">FlaskApp</a>
+        <a href="#">About</a>
+    </nav>
+    <hr>
+    <div class="content">
+        <input type="text" id="search_name"></input>
+        <button onclick="search(document.getElementById('search_name').value)" type="submit">Search</button>
+        <h2>Search Results</h2>
+        <table id="search-table"></table>
+    </div>
+
+    <!-- We need Jquery to perform an API request, so lets add it to the page with a CDN tag -->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+        function search(name) {
+            console.log("test")
+
+            $.ajax({
+                url: 'http://localhost:5000/api/all',
+                type: 'GET',
+                success: function(result) {
+                    console.log(result);
+
+                    let headerHTML = `
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                    `;
+                    document.getElementById("search-table").innerHTML = headerHTML;
+                    
+                    // table created in sqlite3 will by default have an array data type
+                    for (const [key, user] of Object.entries(result)) {
+                        if (user[1].includes(name)){
+                            console.log(name, user);
+                            document.getElementById("search-table").innerHTML += `
+                            <tr>
+                                <td> ${user[0]} </td>
+                                <td> ${user[1]} </td>
+                                <td> ${user[2]} </td>
+                            </tr>
+                            `;
+                        }
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
