@@ -50,13 +50,11 @@
 
     <script>
         function search(name) {
-            console.log("test")
-
+ 
             $.ajax({
                 url: 'http://localhost:5000/api/all',
                 type: 'GET',
                 success: function(result) {
-                    console.log(result);
 
                     let headerHTML = `
                     <tr>
@@ -69,16 +67,17 @@
                     
                     // table created in sqlite3 will by default have an array data type
                     for (const [key, user] of Object.entries(result)) {
-                        if (user[1].includes(name)){
+                        if (user[1].includes(name)) {
                             console.log(name, user);
                             document.getElementById("search-table").innerHTML += `
-                            <tr>
-                                <td> ${user[0]} </td>
-                                <td> ${user[1]} </td>
-                                <td> ${user[2]} </td>
-                            </tr>
+                                <tr>
+                                    <td> ${user[0]} </td>
+                                    <td> ${user[1]} </td>
+                                    <td> ${user[2]} </td>
+                                </tr>
                             `;
                         }
+                        
                     }
                 }
             });
