@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <titl>FlaskApp Demo</titl>
     <style>
+        /* CSS */
         .user {
             padding: 10px;
             margin: 5px;
             background-color: #f3f3f3
         }
 
-        nav a {
+        h1 {
             color: #d64161;
             font-size: 3em;
             margin-left: 50px;
@@ -28,10 +29,7 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="{{ url_for('index') }}">FlaskApp</a>
-        <a href="#">About</a>
-    </nav>
+    <h1>Student Info Search</h1>
     <hr>
     <div class="content">
         <input type="text" id="search_name"></input>
@@ -40,7 +38,8 @@
         <table id="search-table"></table>
     </div>
 
-    <!-- We need Jquery to perform an API request, so lets add it to the page with a CDN tag -->
+    <!-- We need Jquery to perform an API request -->
+    <!-- The code below is similar to an import statement in python. Allows us to use Jquery -->
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
@@ -49,13 +48,16 @@
     </script>
 
     <script>
+        // frontend search
         function search(name) {
  
             $.ajax({
+                // url for API request which gets all data from database
                 url: 'http://localhost:5000/api/all',
                 type: 'GET',
-                success: function(result) {
 
+                success: function(result) {
+                    // create header for the result table 
                     let headerHTML = `
                     <tr>
                         <th>ID</th>
@@ -63,9 +65,10 @@
                         <th>Email</th>
                     </tr>
                     `;
+                    // setting innerHTML (HTML inside a tag) of <table id="search-table"></table> to be headerHTML 
                     document.getElementById("search-table").innerHTML = headerHTML;
                     
-                    // table created in sqlite3 will by default have an array data type
+                    // looping through raw data to find the searched name 
                     for (const [key, user] of Object.entries(result)) {
                         if (user[1].includes(name)) {
                             console.log(name, user);
