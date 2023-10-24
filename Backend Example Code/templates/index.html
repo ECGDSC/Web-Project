@@ -40,6 +40,7 @@
 
     <!-- We need Jquery to perform an API request -->
     <!-- The code below is similar to an import statement in python. Allows us to use Jquery -->
+    <!-- Javascript library which allows us to handle HTTP requests -->
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
@@ -51,6 +52,7 @@
         // frontend search
         function search(name) {
  
+            // allows us to update a webpage without reloading it 
             $.ajax({
                 // url for API request which gets all data from database
                 url: 'http://localhost:5000/api/all',

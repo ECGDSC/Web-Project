@@ -9,28 +9,6 @@ def initialize_database():
     with open("schema.sql") as f:
         connection.executescript(f.read())
 
-    # You can also create tables inside app.py
-    # cursor.execute("""
-    #     DROP TABLE IF EXISTS users
-
-    #     CREATE TABLE users (
-    #         id INTEGER PRIMARY KEY,
-    #         name TEXT,
-    #         email TEXT
-    #     )
-    # """)
-
-    cur = connection.cursor()
-    # initialize database by inserting few data
-    cur.execute("INSERT INTO users (name, email) VALUES (?, ?)",
-                ("Arata", "arata@earlham.edu")
-                )
-    cur.execute("INSERT INTO users (name, email) VALUES (?, ?)",
-                ("Sharon", "sharon@earlham.edu")
-                )
-    cur.execute("INSERT INTO users (name, email) VALUES (?, ?)",
-                ("Tien", "tien@earlham.com")
-                )
     connection.commit()
     connection.close()
 
@@ -61,5 +39,5 @@ def getAll():
     all_users = conn.execute("SELECT * FROM users").fetchall()
     return all_users
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
