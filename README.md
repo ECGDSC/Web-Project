@@ -26,3 +26,4 @@ Here is a list of vscode extensions which would help you code for our project:
 
 Click [here](https://blog.bitsrc.io/top-10-visual-studio-code-extensions-for-web-developers-5bd6a76bdf5f) to see the description of the extensions and [here](https://code.visualstudio.com/docs/editor/extension-marketplace#:~:text=Browse%20for%20extensions,-You%20can%20browse&text=Bring%20up%20the%20Extensions%20view,on%20the%20VS%20Code%20Marketplace.) to see how to get an extension if you forgot how to!
 
+## Floor plan maker: [link](https://floorplancreator.net/)
