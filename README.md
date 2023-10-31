@@ -13,6 +13,13 @@ Explaination for the boilerplate: [link](https://www.freecodecamp.org/news/basic
 ## Image for example floor code:
 [Dowload and save it in the folder you save your code file in](https://imgur.com/ZYsNEia)
 
+## Git Commands
+
+When you worked on some part of the project, say you edited <code>floor_2.html</code> and you want your team member to be able to access it, you can push your code and make it accessible to everyone. Here is a step-by-step guide for that:
+
+1. Navigate to the directory the file you want to push is in. In this case, <code>floor_2.html</code> is in the folder/directory <code>floor2</code> in <code>Web-Project</code> and let's say you are currently in the main directory, <code>Web-Project</code>, you woud use the <code>cd</code> command to navigate to <code>floor2</code>. You use the command <code>cd floor2</code> and it leads you to the desired directory.
+2. Now you use the command <code>git add</code> to add the file you editted.
+
 ## VScode Extensions 
 
 Here is a list of vscode extensions which would help you code for our project:
