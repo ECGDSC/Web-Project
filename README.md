@@ -25,7 +25,7 @@ Note: use <code>cd ..</code> to go back a directory.
 2. Now, you use the command `git add` and the name of the file/files (with spaces between multiple file names) to add the file you edited.  For example:
     
   ```ruby
-  C:\Users\parsa\OneDrive\Desktop\GDSC\Web-Project\floor2></span> git add floor2.html
+  C:\Users\parsa\OneDrive\Desktop\GDSC\Web-Project\floor2> git add floor2.html
   ```
     
 3. Then use <code>git commit -m “SOME COMMENT”</code> writing a comment on what you did with the file you are pushing in the “some comments” portion (remember the quotes). 
