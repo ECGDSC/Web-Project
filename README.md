@@ -33,7 +33,7 @@ Only one member of your group needs to do this:
 
 #### After Initial Set-up/ If you already have a branch:
 
-1. Run <code>git branch -av</code> which would list all the remote branches that has been created. Find the name of the branch for your group and run <code>git checkout <branch_name</code> to go to your group's branch.
+1. Run <code>git branch -av</code> which would list all the remote branches that has been created. Find the name of the branch for your group and run <code>git checkout <branch_name></code> to go to your group's branch.
 2. Navigate to the directory where the file you want to push is in. In this case, <code>floor_2.html</code> is in the folder/directory <code>floor2</code> in <code>Web-Project</code> and let's say you are currently in the main directory, <code>Web-Project</code>, you woud use the <code>cd</code> command to navigate to <code>floor2</code>. You use the command <code>cd floor2</code>, which leads you to the desired directory.
 Note: use <code>cd ..</code> to go back a directory.
 
