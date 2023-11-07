@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Floor Example</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="Floor">
+            <button class="Science_Commons_Lobby" onclick=vote(this)>Room 100</button>
+            <button class="Group_Study" onclick=vote(this)>Room 104</button>
+            <button class="Physics_Lounge" onclick=vote(this)>Room 107</button>
+            <button class="Table_1" onclick=vote(this)>Table 1</button>
+            <button class="Table_2" onclick=vote(this)>Table 2</button>
+            <button class="Table_3" onclick=vote(this)>Table 3</button>
+        </div>
+        <script>
+            function vote(element){
+                element.classList.toggle("active");
+            }
+        </script>
+
+        
+    </body>
+</html>
