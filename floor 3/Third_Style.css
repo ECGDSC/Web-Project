@@ -1,0 +1,200 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make this div the entire page so the button can use the percentage of the page's size
+so the button sizes change when we resize the window */
+#Floor{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-image: url(NewPlan.png) 
+
+}
+
+/* Room 312 */
+
+.Room_312.active{
+    background:red;
+    color: white;
+    width: 14%;
+    height: 31.5%;
+    top: 11.3%;
+    left: 6.3%;
+    border: transparent;
+}
+.Room_312{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 14%;
+    height: 31.5%;
+    top: 11.3%;
+    left: 6.3%;
+    border: transparent;
+}
+
+/* Room 310 */
+
+.Room_310.active{
+    background:red;
+    color: white;
+    width: 14%;
+    height: 31.5%;
+    top: 11.3%;
+    left: 27%;
+    border: transparent;
+}
+.Room_310{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 14%;
+    height: 31.5%;
+    top: 11.3%;
+    left: 27%;
+    border: transparent;
+}
+
+/* Room 308 */
+
+.Room_308.active{
+    background:red;
+    color: white;
+    width: 34.5%;
+    height: 32.8%;
+    bottom: 11%;
+    left: 6.3%;
+    border: transparent;
+}
+.Room_308{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 34.5%;
+    height: 32.8%;
+    bottom: 11%;
+    left: 6.3%;
+    border: transparent;
+}
+
+/* Study Booth 1 */
+
+.Study_Booth_1.active{
+    background:red;
+    color: white;
+    width: 8%;
+    height: 33%;
+    top: 10%;
+    right: 44.5%;
+    border: transparent;
+}
+.Study_Booth_1{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8%;
+    height: 33%;
+    top: 10%;
+    right: 44.5%;
+    border: transparent;
+}
+/* Room 302 */
+
+.Room_302.active{
+    background:red;
+    color: white;
+    width: 17.8%;
+    height: 32%;
+    top: 11%;
+    left: 62.2%;
+    border: transparent;
+}
+.Room_302{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 17.8%;
+    height: 32%;
+    top: 11%;
+    left: 62.2%;
+    border: transparent;
+}
+/* Room 304 */
+
+.Room_304.active{
+    background:red;
+    color: white;
+    width: 18%;
+    height: 35%;
+    top: 55%;
+    left: 62%;
+    border: transparent;
+}
+.Room_304{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 18%;
+    height: 35%;
+    top: 55%;
+    left: 62%;
+    border: transparent;
+}
+
+/* Study Booth #2 */
+
+.Study_Booth_2.active{
+    background:red;
+    color: white;
+    width: 40%;
+    height: 28%;
+    top: 18%;
+    left: 5%;
+    border: transparent;
+}
+.Study_Booth_2{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 9%;
+    height: 32%;
+    top: 11%;
+    left: 86%;
+    border: transparent;
+}
+
+/*.lngbtn:before {
+     content:"";
+       transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    background-color: #f4d046;
+    width:38px;
+    height:39px;
+    top: 5.3px;
+    right: 85%;
+    position:absolute;
+    border-radius:6px;
+    z-index:-1;
+    
+    .lngbtn:after {
+       content:"";
+       transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    background-color: #f4d046;
+    width:38px;
+    height:39px;
+    top: 5.3px;
+    */
