@@ -12,3 +12,4 @@ INSERT INTO users (name, email) VALUES ("Tien", "tien@earlham.edu");
 INSERT INTO users (name, email) VALUES ("Musa", "musa@earlham.edu");
 INSERT INTO users (name, email) VALUES ("Parsa", "parsa@earlham.edu");
 INSERT INTO users (name, email) VALUES ("Anahit", "anahit@earlham.edu");
+INSERT INTO users (name, email) VALUES ("Shun", "shun@earlham.edu");
