@@ -153,10 +153,10 @@ so the button sizes change when we resize the window */
 .Study_Booth_2.active{
     background:red;
     color: white;
-    width: 40%;
-    height: 28%;
-    top: 18%;
-    left: 5%;
+    width: 9%;
+    height: 32%;
+    top: 11%;
+    left: 86%;
     border: transparent;
 }
 .Study_Booth_2{
