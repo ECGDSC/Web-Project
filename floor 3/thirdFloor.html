@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Floor Example</title>
+        <link rel="stylesheet" href="Third_Style.css">
+    </head>
+    <body>
+        <div id="Floor">
+            <button class="Room_312" onclick=vote(this)>Room 312</button>
+            <button class="Room_310" onclick=vote(this)>Room 310</button>
+            <button class="Room_308" onclick=vote(this)>Room 308</button>
+            <button class="Study_Booth_1" onclick=vote(this)>Study Booth</button>
+            <button class="Room_302" onclick=vote(this)>Room 302</button>
+            <button class="Room_304" onclick=vote(this)>Room 304</button>
+            <button class="Study_Booth_2" onclick=vote(this)>Study Booth #2</button>
+        </div>
+        <script>
+            function vote(element){
+                element.classList.toggle("active");
+            }
+        </script>
+
+        
+    </body>
+</html>
