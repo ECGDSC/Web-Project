@@ -1,0 +1,152 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make this div the entire page so the button can use the percentage of the page's size
+so the button sizes change when we resize the window */
+#Floor{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-image: url(floor1_plan.png);
+
+}
+
+/* Room 100 */
+
+.Science_Commons_Lobby.active{
+    background:red;
+    color: white;
+    width: 33%;
+    height: 35%;
+    top: 20%;
+    left: 32%;
+    border: transparent;
+}
+.Science_Commons_Lobby{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 33%;
+    height: 35%;
+    top: 20%;
+    left: 32%;
+    border: transparent;
+}
+
+/* Room 104 */
+
+.Group_Study.active{
+    background:red;
+    color: white;
+    width: 31%;
+    height: 30%;
+    bottom: 6%;
+    left: 7%;
+    border: transparent;
+}
+.Group_Study{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 31%;
+    height: 30%;
+    bottom: 6%;
+    left: 7%;
+    border: transparent;
+}
+
+/* Room 107 */
+
+.Physics_Lounge.active{
+    background:red;
+    color: white;
+    width: 33%;
+    height: 36%;
+    top: 19%;
+    right: 70%;
+    border: transparent;
+}
+.Physics_Lounge{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 33%;
+    height: 36%;
+    top: 19%;
+    right: 70%;
+    border: transparent;
+}
+
+/* Table 1 */
+
+.Table_1.active{
+    background:red;
+    color: white;
+    width: 20%;
+    height: 5%;
+    top: 5%;
+    right: 2%;
+    border: transparent;
+}
+.Table_1{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 20%;
+    height: 5%;
+    top: 5%;
+    right: 2%;
+    border: transparent;
+}
+
+/* Table 2 */
+
+.Table_2.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 5%;
+    top: 20%;
+    right: 12%;
+    border: transparent;
+}
+.Table_2{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 5%;
+    top: 20%;
+    right: 12%;
+    border: transparent;
+}
+
+/* Table 3 */
+
+.Table_3.active{
+    background:red;
+    color: white;
+    width: 5%;
+    height: 5%;
+    top: 5%;
+    right: 30%;
+    border: transparent;
+}
+.Table_3{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 5%;
+    height: 5%;
+    top: 5%;
+    right: 20%;
+    border: transparent;
+}
+
