@@ -8,100 +8,497 @@ body {
 so the button sizes change when we resize the window */
 #Floor{
     position: relative;
-    
+    display: flex;
     height: 100vh;
     width: 100vw;
     background-size: 100% 100%;
-
     background-repeat: no-repeat;
-    background-image: url(image/Example_floor_plan.png);
+    background-image: url(floor2.jpg);
 
 }
 
 /* Room 100 */
 
-.Left_top_room.active{
+.room_100.active{
     background:red;
     color: white;
-    width: 40%;
-    height: 28%;
-    top: 18%;
-    left: 5%;
+    width: 10.5%;
+    height: 30.5%;
+    top: 44%;
+    left: 3%;
     border: transparent;
 }
-.Left_top_room{
+.room_100{
     position: absolute;
     background: green;
     color: white;
-    width: 40%;
-    height: 28%;
-    top: 18%;
-    left: 5%;
+    width: 10.5%;
+    height: 30.5%;
+    top: 44%;
+    left: 3%;
     border: transparent;
 }
 
 /* Room 101 */
 
-.Left_bottom_room.active{
+.room_101.active{
     background:red;
     color: white;
-    width: 31%;
-    height: 42%;
-    bottom: 6%;
-    left: 7%;
+    width: 10.5%;
+    height: 19.5%;
+    bottom: 5%;
+    left: 3%;
     border: transparent;
 }
-.Left_bottom_room{
+.room_101{
     position: absolute;
     background: green;
     color: white;
-    width: 31%;
-    height: 42%;
-    bottom: 6%;
-    left: 7%;
+    width: 10.5%;
+    height: 19.5%;
+    bottom: 5%;
+    left: 3%;
     border: transparent;
 }
 
 /* Room 102 */
 
-.Right_top_room.active{
+.room_102.active{
     background:red;
     color: white;
-    width: 33%;
-    height: 36%;
-    top: 19%;
-    right: 5%;
+    width: 19.5%;
+    height: 19.5%;
+    bottom: 5%;
+    left: 14.5%;
     border: transparent;
 }
-.Right_top_room{
+.room_102{
     position: absolute;
     background: green;
+    width: 19.5%;
+    height: 19.5%;
+    bottom: 5%;
+    left: 14.5%;
     color: white;
-    width: 33%;
-    height: 36%;
-    top: 19%;
-    right: 5%;
+    
     border: transparent;
 }
 
 /* Room 103 */
 
-.Right_bottom_room.active{
+.room_103.active{
     background:red;
     color: white;
-    width: 28%;
-    height: 34%;
-    bottom: 6%;
-    right: 12%;
+    width: 19.5%;
+    height: 21%;
+    bottom: 35%;
+    left: 14.5%;
     border: transparent;
 }
-.Right_bottom_room{
+.room_103{
     position: absolute;
     background: green;
     color: white;
-    width: 28%;
-    height: 34%;
-    bottom: 6%;
-    right: 12%;
+    width: 19.5%;
+    height: 21%;
+    bottom: 35%;
+    left: 14.5%;
     border: transparent;
 }
+
+/* Room 104 */
+
+.room_104.active{
+    background:red;
+    color: white;
+    width: 26.5%;
+    height: 21%;
+    bottom: 35%;
+    left: 35%;
+    border: transparent;
+}
+.room_104{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 26.5%;
+    height: 21%;
+    bottom: 35%;
+    left: 35%;
+    border: transparent;
+}
+
+/* Room 105 */
+
+.room_105.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 56.5%;
+    left: 55.2%;
+    border: transparent;
+}
+.room_105{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 56.5%;
+    left: 55.2%;
+    border: transparent;
+}
+
+/* Room 106 */
+
+.room_106.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 7%;
+    left: 36%;
+    border: transparent;
+    transform: rotate(-9deg)
+}
+.room_106{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 7%;
+    left: 36%;
+    border: transparent;
+    transform: rotate(-9deg)
+}
+
+.room_107.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 8.5%;
+    left: 42.2%;
+    border: transparent;
+    transform: rotate(-9deg)
+}
+.room_107{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 8.5%;
+    left: 42.2%;
+    border: transparent;
+    transform: rotate(-9deg)
+}
+
+/* Room 109 */
+
+.room_108.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 10%;
+    left: 48.5%;
+    border: transparent;
+}
+.room_108{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 10%;
+    left: 48.5%;
+    border: transparent;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 110 */
+
+.room_109.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 12%;
+    right: 38.9%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+.room_109{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 12%;
+    right: 38.9%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 111 */
+
+.room_110.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 13.5%;
+    right: 32.5%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+.room_110{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 13.5%;
+    right: 32.5%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 112 */
+
+.room_111.active{
+    background:red;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 13.5%;
+    right: 32.5%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+.room_111{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6.3%;
+    height: 13%;
+    bottom: 13.5%;
+    right: 32.5%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 113 */
+
+.room_112.active{
+    background:red;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 15.5%;
+    right: 24%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+.room_112{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 15.5%;
+    right: 24%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 114 */
+
+.room_113.active{
+    background:red;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 15.5%;
+    right: 24%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+.room_113{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 15.5%;
+    right: 24%;
+    transform: rotate(-9deg);
+    border: transparent;
+}
+
+/* Room 114 */
+
+.room_114.active{
+    background:red;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 17.5%;
+    right: 15.5%;
+    transform: rotate(-8deg);
+    border: transparent;
+}
+
+.room_114{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8.3%;
+    height: 13%;
+    bottom: 17.5%;
+    right: 15.5%;
+    transform: rotate(-8deg);
+    border: transparent;
+} 
+
+/* Room 115 */
+
+.room_115.active{
+    background:red;
+    color: white;
+    width: 8.3%;
+    height: 15%;
+    bottom: 19%;
+    right: 7%;
+    transform: rotate(-6deg);
+    border: transparent;
+}
+
+.room_115{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8.3%;
+    height: 15%;
+    bottom: 19%;
+    right: 7%;
+    transform: rotate(-6deg);
+    border: transparent;
+} 
+
+/* Room 115 */
+
+.room_116.active{
+    background:red;
+    color: white;
+    width: 5.3%;
+    height: 30%;
+    bottom: 19%;
+    right: 2%;
+    transform: rotate(-6deg);
+    border: transparent;
+}
+
+.room_116{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 5.3%;
+    height: 30%;
+    bottom: 19%;
+    right: 2%;
+    transform: rotate(-6deg);
+    border: transparent;
+} 
+
+/* Room 115 */
+
+.room_117.active{
+    background:red;
+    color: white;
+    width: 18%;
+    height: 37%;
+    bottom: 51%;
+    right: 4.5%;
+    border: transparent;
+}
+
+.room_117{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 18%;
+    height: 37%;
+    bottom: 51%;
+    right: 4.5%;
+    border: transparent;
+} 
+
+/* Room 115 */
+
+.room_118.active{
+    background:red;
+    color: white;
+    width: 7%;
+    height: 15%;
+    bottom: 75%;
+    right: 23.5%;
+    border: transparent;
+}
+
+.room_118{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 7%;
+    height: 15%;
+    bottom: 75%;
+    right: 23.5%;
+    border: transparent;
+} 
+
+.room_119.active{
+    background:red;
+    color: white;
+    width: 6%;
+    height: 13%;
+    bottom: 80%;
+    right: 31.5%;
+    border: transparent;
+}
+
+.room_119{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6%;
+    height: 13%;
+    bottom: 80%;
+    right: 31.5%;
+    border: transparent;
+} 
+
+.room_120.active{
+    background:red;
+    color: white;
+    width: 6%;
+    height: 13%;
+    bottom: 83%;
+    right: 38.5%;
+    border: transparent;
+}
+
+.room_120{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6%;
+    height: 13%;
+    bottom: 83%;
+    right: 38.5%;
+    border: transparent;
+} 
