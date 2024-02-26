@@ -1,7 +1,13 @@
 # Web-Project
 
 ## Teams:
+2024'spring
+* Main/F1: Samadhi
+* F2: Sora, Shun, John
+* F3:Reeti, Rinko
+* Back: Nour, Nghi
 
+2023'fall
 * Main/F1: Samadhi, Jalen, Diprekshya, Stevie 
 * F2: Sora, Shun, John, Ryan
 * F3: Nour, Reeti, Rinko, Karol
