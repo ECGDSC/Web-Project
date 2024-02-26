@@ -14,95 +14,294 @@ so the button sizes change when we resize the window */
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
-    background-image: url(floor1_plan.png);
+    background-image: url(new_floor_plan.png);
 
 }
 
 /* Room 100 */
 
-.Science_Commons_Lobby.active{
+.Vestibule.active{
     background:red;
     color: white;
-    width: 33%;
-    height: 35%;
+    width: 35%;
+    height: 36%;
     top: 20%;
-    left: 32%;
+    left: 31%;
+    border: transparent;
+}
+.Vestibule{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 35%;
+    height: 36%;
+    top: 20%;
+    left: 31%;
+    border: transparent;
+}
+
+/* Room 104 */
+
+/* .Science_Commons_Collaboratory.active{
+    background:red;
+    color: white;
+    width: 14%;
+    height: 29%;
+    bottom: 6%;
+    left: 22%;
+    border: transparent;
+}
+.Science_Commons_Collaboratory{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 14%;
+    height: 29%;
+    bottom: 6%;
+    left: 22%;
+    border: transparent;
+} */
+
+/* Room 107 */
+
+/* .Science_Commons_Lobby.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
     border: transparent;
 }
 .Science_Commons_Lobby{
     position: absolute;
     background: green;
     color: white;
-    width: 33%;
-    height: 35%;
-    top: 20%;
-    left: 32%;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
     border: transparent;
-}
+} */
 
-/* Room 104 */
+/* Room 107 */
 
-.Group_Study.active{
+/* .Big_Room.active{
     background:red;
     color: white;
-    width: 31%;
-    height: 30%;
-    bottom: 6%;
-    left: 7%;
-    border: transparent;
-}
-.Group_Study{
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent; */
+/* }
+.Big_Room{
     position: absolute;
     background: green;
     color: white;
-    width: 31%;
-    height: 30%;
-    bottom: 6%;
-    left: 7%;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */
+
+/* Room 107 */
+
+/* .Group_Study.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+.Group_Study{
+    position: absolute; */
+    /* background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
     border: transparent;
 }
 
 /* Room 107 */
 
+/* .CS_Hardware_Interface_Lab.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent; */ */
+/* }
+.CS_Hardware_Interface_Lab{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+
+/* Room 107 */
+/* 
+.Physics_Faculty_Lab_Computational.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+.Physics_Faculty_Lab_Computational{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */ */
+
+/* Room 107 */
+
+/* .Physics_Faculty_Lab_Laser.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+.Physics_Faculty_Lab_Laser{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */
+
+/* Room 107 */
+
+/* .Physics_Storage.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+.Physics_Storage{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */
+
+/* Room 107 */
+
+/* .Intro_Physics_Lab.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent; */
+/* }
+.Intro_Physics_Lab{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */
+
+/* Room 107 */
+/* 
+.Physics_Faculty_Flex_Lab.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+}
+.Physics_Faculty_Flex_Lab{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
+    border: transparent;
+} */
+
+/* Room 107 */
+/* 
 .Physics_Lounge.active{
     background:red;
     color: white;
-    width: 33%;
-    height: 36%;
-    top: 19%;
-    right: 70%;
-    border: transparent;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%; */
+    /* border: transparent;
 }
 .Physics_Lounge{
     position: absolute;
     background: green;
     color: white;
-    width: 33%;
-    height: 36%;
-    top: 19%;
-    right: 70%;
+    width: 12%;
+    height: 20%;
+    top: 36%;
+    right: 85%;
     border: transparent;
-}
+} */
+
 
 /* Table 1 */
 
 .Table_1.active{
     background:red;
     color: white;
-    width: 20%;
-    height: 5%;
-    top: 5%;
-    right: 2%;
+    width: 22%;
+    height: 12%;
+    top: 4%;
+    right: 3%;
     border: transparent;
 }
 .Table_1{
     position: absolute;
     background: green;
     color: white;
-    width: 20%;
-    height: 5%;
-    top: 5%;
-    right: 2%;
+    width: 22%;
+    height: 12%;
+    top: 4%;
+    right: 3%;
     border: transparent;
 }
 
@@ -111,20 +310,20 @@ so the button sizes change when we resize the window */
 .Table_2.active{
     background:red;
     color: white;
-    width: 12%;
-    height: 5%;
-    top: 20%;
-    right: 12%;
+    width: 22%;
+    height: 11%;
+    top: 19%;
+    right: 3%;
     border: transparent;
 }
 .Table_2{
     position: absolute;
     background: green;
     color: white;
-    width: 12%;
-    height: 5%;
-    top: 20%;
-    right: 12%;
+    width: 22%;
+    height: 11%;
+    top: 19%;
+    right: 3%;
     border: transparent;
 }
 
@@ -133,20 +332,42 @@ so the button sizes change when we resize the window */
 .Table_3.active{
     background:red;
     color: white;
-    width: 5%;
-    height: 5%;
-    top: 5%;
-    right: 30%;
+    width: 22%;
+    height: 11%;
+    top: 35%;
+    right: 3%;
     border: transparent;
 }
 .Table_3{
     position: absolute;
     background: green;
     color: white;
+    width: 22%;
+    height: 11%;
+    top: 35%;
+    right: 3%;
+    border: transparent;
+}
+
+/* Hallway */
+
+/* .Hallway.active{
+    background:red;
+    color: white;
     width: 5%;
     height: 5%;
     top: 5%;
-    right: 20%;
+    right: 30%;
+    border: transparent; */
+/* } */
+.Hallway{
+    position: absolute;
+    background: rgb(128, 0, 77);
+    color: white;
+    width: 94%;
+    height: 3%;
+    top: 60%;
+    right: 3%;
     border: transparent;
 }
 
