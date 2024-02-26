@@ -150,4 +150,222 @@ so the button sizes change when we resize the window */
     border: transparent;
 }
 
+/* Room 1000 */
 
+.Vestibule.active{
+    background:red;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 3%;
+    right: 18.5%;
+    border: transparent;
+}
+.Vestibule{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 12%;
+    height: 20%;
+    top: 3%;
+    right: 18.5%;
+    border: transparent;
+}
+
+/* Room 101 */
+
+.Science_Commons_Collaboratory.active{
+    background:red;
+    color: white;
+    width: 14%;
+    height: 32%;
+    top: 3%;
+    right: 31.5%;
+    border: transparent;
+}
+.Science_Commons_Collaboratory{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 14%;
+    height: 32%;
+    top: 3%;
+    right: 31.5%;
+    border: transparent;
+}
+
+/* Room ? */
+
+.Question_Mark.active{
+    background:red;
+    color: white;
+    width: 22%;
+    height: 24%;
+    top: 42%;
+    right: 24.5%;
+    border: transparent;
+}
+.Question_Mark{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 22%;
+    height: 24%;
+    top: 42%;
+    right: 24.5%;
+    border: transparent;
+}
+
+/* Room 105 */
+
+.I_Dunno.active{
+    background:red;
+    color: white;
+    width: 8%;
+    height: 24%;
+    top: 42%;
+    right: 47.5%;
+    border: transparent;
+}
+.I_Dunno{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 8%;
+    height: 24%;
+    top: 42%;
+    right: 47.5%;
+    border: transparent;
+}
+
+/* Room 111 */
+
+.Intro_Physics_Lab.active{
+    background:red;
+    color: white;
+    width: 23%;
+    height: 32%;
+    top: 42%;
+    right: 74.5%;
+    border: transparent;
+}
+.Intro_Physics_Lab{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 23%;
+    height: 32%;
+    top: 42%;
+    right: 74.5%;
+    border: transparent;
+}
+
+/* Room 106 */
+
+.Science_Commons_Workroom.active{
+    background:red;
+    color: white;
+    width: 31%;
+    height: 20%;
+    top: 76%;
+    right: 14.5%;
+    border: transparent;
+}
+.Science_Commons_Workroom{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 31%;
+    height: 20%;
+    top: 76%;
+    right: 14.5%;
+    border: transparent;
+}
+
+/* Room 108 */
+
+.CS_Hardware_Interface_Lab.active{
+    background:red;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 60.5%;
+    border: transparent;
+}
+.CS_Hardware_Interface_Lab{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 60.5%;
+    border: transparent;
+}
+
+/* Room 110 */
+
+.Physics_Faculty_Lab_Computational.active{
+    background:red;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 67.5%;
+    border: transparent;
+}
+.Physics_Faculty_Lab_Computational{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 67.5%;
+    border: transparent;
+}
+
+/* Room 112 */
+
+.Physics_Faculty_Lab_Laser.active{
+    background:red;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 74.5%;
+    border: transparent;
+}
+.Physics_Faculty_Lab_Laser{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 6%;
+    height: 20%;
+    top: 76%;
+    right: 74.5%;
+    border: transparent;
+}
+
+/* Room 114 */
+
+.Physics_Storage.active{
+    background:red;
+    color: white;
+    width: 16%;
+    height: 20%;
+    top: 76%;
+    right: 81.5%;
+    border: transparent;
+}
+.Physics_Storage{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 16%;
+    height: 20%;
+    top: 76%;
+    right: 81.5%;
+    border: transparent;
+}
