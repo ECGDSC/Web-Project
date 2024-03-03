@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Button Design Example</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="button-style.css">  <!--linking the second css file-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--linking icon library-->
+
+    </head>
+    <!--Adding another class which is referenced in the other css file-->
+    <!--Icons need to be individually added to html-->
+    <body>
+        <div id="Floor">
+            <button class="Left_top_room hover_border font" onclick=vote(this)>Room 100</button>
+            <button class="Left_bottom_room round" onclick=vote(this)>Room 101</button>
+            <button class="Right_top_room" onclick=vote(this)><i class="fa fa-door"></i> Room 102</button>
+            <button class="Right_bottom_room" onclick=vote(this)>Room 103</button>
+        </div>
+        <script>
+            function vote(element){
+                element.classList.toggle("active");
+            }
+        </script>
+
+        
+    </body>
+</html>
