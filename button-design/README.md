@@ -9,7 +9,8 @@ The style.css file is like the CSS files on every floor. Those don't need to be 
 Create a new CSS file like the button-style.css one, and add all the design elements you like in separate classes (don't forget comments describing the design).
 
 Links to tutorials further explaining designs or more design ideas:
-* [CSS Icons](https://www.w3schools.com/howto/howto_css_icon_buttons.asp)
+* [CSS Icons Tutorial](https://www.w3schools.com/howto/howto_css_icon_buttons.asp)
+* [Icon List](https://fontawesome.com/search?m=free&o=r)
 * [CSS Buttons](https://www.w3schools.com/css/css3_buttons.asp)
 
 ## Every Group:
