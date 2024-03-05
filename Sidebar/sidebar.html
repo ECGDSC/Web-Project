@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sidebar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="custom-styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxl-codepen"--></i>
+            <span>Earlham College</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="Content">
+        <div>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="#">
+                <i class="bx bxs-home"></i>
+                <span class="nav-item">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bxs-building"></i>
+                <span class="nav-item">CST</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Floor 1</a></li>
+                <li><a href="#">Floor 2</a></li>
+                <li><a href="#">Floor 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+</body>
+
+</html>
