@@ -14,116 +14,201 @@ so the button sizes change when we resize the window */
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
-    background-image: url(NewPlan.png) 
+    background-image: url(newfloor.png) 
 
 }
 
-/* Room 312 */
+/* Room 317 */
 
-.Room_312.active{
+.Room_317.active{
+    background:red;
+    color: white;
+    width: 11.8%;
+    height: 46%;
+    top: 5%;
+    left: 1.6%;
+    border: transparent;
+}
+.Room_317{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 11.8%;
+    height: 46%;
+    top: 5%;
+    left: 1.6%;
+    border: transparent;
+}
+
+/* Room 315 */
+
+.Room_315.active{
+    background:red;
+    color: white;
+    width: 19.2%;
+    height: 29.7%;
+    top: 5.0%;
+    left: 15.6%;
+    border: transparent;
+}
+.Room_315{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 19.2%;
+    height: 29.7%;
+    top: 5.0%;
+    left: 15.6%;
+    border: transparent;
+}
+
+/* Room 318 */
+
+.Room_318.active{
     background:red;
     color: white;
     width: 14%;
-    height: 31.5%;
-    top: 11.3%;
-    left: 6.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 1.6%;ß
     border: transparent;
 }
-.Room_312{
+.Room_318{
     position: absolute;
     background: green;
     color: white;
     width: 14%;
-    height: 31.5%;
-    top: 11.3%;
-    left: 6.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 1.6%;
     border: transparent;
 }
 
-/* Room 310 */
-
-.Room_310.active{
-    background:red;
-    color: white;
-    width: 14%;
-    height: 31.5%;
-    top: 11.3%;
-    left: 27%;
-    border: transparent;
-}
-.Room_310{
-    position: absolute;
-    background: green;
-    color: white;
-    width: 14%;
-    height: 31.5%;
-    top: 11.3%;
-    left: 27%;
-    border: transparent;
-}
-
-/* Room 308 */
-
-.Room_308.active{
-    background:red;
-    color: white;
-    width: 34.5%;
-    height: 32.8%;
-    bottom: 11%;
-    left: 6.3%;
-    border: transparent;
-}
-.Room_308{
-    position: absolute;
-    background: green;
-    color: white;
-    width: 34.5%;
-    height: 32.8%;
-    bottom: 11%;
-    left: 6.3%;
-    border: transparent;
-}
-
-/* Study Booth 1 */
-
-.Study_Booth_1.active{
-    background:red;
-    color: white;
-    width: 8%;
-    height: 33%;
-    top: 10%;
-    right: 44.5%;
-    border: transparent;
-}
-.Study_Booth_1{
-    position: absolute;
-    background: green;
-    color: white;
-    width: 8%;
-    height: 33%;
-    top: 10%;
-    right: 44.5%;
-    border: transparent;
-}
 /* Room 302 */
 
 .Room_302.active{
     background:red;
     color: white;
-    width: 17.8%;
-    height: 32%;
-    top: 11%;
-    left: 62.2%;
+    width: 4.7%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 57%;
     border: transparent;
 }
 .Room_302{
     position: absolute;
     background: green;
     color: white;
-    width: 17.8%;
+    width: 4.7%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 57%;
+    border: transparent;
+}
+/* Room 303 */
+
+.Room_303.active{
+    background:red;
+    color: white;
+    width: 11.6%;
     height: 32%;
-    top: 11%;
-    left: 62.2%;
+    top: 5%;
+    left: 57%;
+    border: transparent;
+}
+.Room_303{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 11.6%;
+    height: 32%;
+    top: 5%;
+    left: 57%;
+    border: transparent;
+}
+/* Room 314 */
+
+.Room_314.active{
+    background:red;
+    color: white;
+    width: 10.5%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 26.5%;
+    border: transparent;
+}
+.Room_314{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 10.5%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 26.5%;
+    border: transparent;
+}
+
+/* Room 300 */
+
+.Room_300.active{
+    background:red;
+    color: white;
+    width: 20%;
+    height: 78%;
+    top: 5%;
+    left: 79%;
+    border: transparent;
+}
+.Room_300{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 20%;
+    height: 78%;
+    top: 5%;
+    left: 79%;
+    border: transparent;
+}
+/* Room 316 */
+
+.Room_316.active{
+    background:red;
+    color: white;
+    width: 7.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 17.3%;
+    border: transparent;
+}
+.Room_316{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 7.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 17.3%;
+    border: transparent;
+}
+/* Room 308 */
+
+.Room_308.active{
+    background:red;
+    color: white;
+    width: 9.4%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 41.6%;
+    border: transparent;
+}
+.Room_308{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 9.4%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 41.6%;
     border: transparent;
 }
 /* Room 304 */
@@ -131,45 +216,106 @@ so the button sizes change when we resize the window */
 .Room_304.active{
     background:red;
     color: white;
-    width: 18%;
-    height: 35%;
-    top: 55%;
-    left: 62%;
+    width: 4.7%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 57%;
     border: transparent;
 }
 .Room_304{
     position: absolute;
     background: green;
     color: white;
-    width: 18%;
-    height: 35%;
-    top: 55%;
-    left: 62%;
+    width: 4.7%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 57%;
     border: transparent;
 }
+/* Room 312 */
 
-/* Study Booth #2 */
-
-.Study_Booth_2.active{
+.Room_312.active{
     background:red;
     color: white;
-    width: 9%;
-    height: 32%;
-    top: 11%;
-    left: 86%;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 41.5%;
     border: transparent;
 }
-.Study_Booth_2{
+.Room_312{
     position: absolute;
     background: green;
     color: white;
-    width: 9%;
-    height: 32%;
-    top: 11%;
-    left: 86%;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 41.5%;
     border: transparent;
 }
+/* Room 310 */
 
+.Room_310.active{
+    background:red;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 47%;
+    border: transparent;
+}
+.Room_310{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 47%;
+    border: transparent;
+}
+/* Study booth 1 */
+
+.Study_booth_1.active{
+    background:red;
+    color: white;
+    width: 2.0%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 53%;
+    border: transparent;
+}
+.Study_booth_1{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 2.0%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 53%;
+    border: transparent;
+}
+/* Study booth 2 */
+
+.Study_booth_2.active{
+    background:red;
+    color: white;
+    width: 2.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 63%;
+    border: transparent;
+}
+.Study_booth_2{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 2.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 63%;
+    border: transparent;
+}
 /*.lngbtn:before {
      content:"";
        transform: rotate(45deg);
