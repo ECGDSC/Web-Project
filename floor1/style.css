@@ -369,3 +369,69 @@ so the button sizes change when we resize the window */
     right: 81.5%;
     border: transparent;
 }
+
+/* Table 4 */
+
+.Table_4.active{
+    background:red;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 2%;
+    border: transparent;
+}
+.Table_4{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 2%;
+    border: transparent;
+}
+
+/* Table 5 */
+
+.Table_5.active{
+    background:red;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 6%;
+    border: transparent;
+}
+.Table_5{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 6%;
+    border: transparent;
+}
+
+/* Table 6 */
+
+.Table_6.active{
+    background:red;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 11%;
+    border: transparent;
+}
+.Table_6{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 11%;
+    border: transparent;
+}

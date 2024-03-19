@@ -22,6 +22,10 @@ so the button sizes change when we resize the window */
     border-radius: 7%;
 }
 
+.circle{
+    border-radius: 50%;
+}
+
 .change_color{
     background-color: rgb(85, 194, 85)
 }
