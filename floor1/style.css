@@ -13,8 +13,8 @@ so the button sizes change when we resize the window */
     width: 100vw;
     background-size: 100% 100%;
 
-    background-repeat: no-repeat;
-    background-image: url(new_floor_plan.png);
+    background-repeat: no-repeat; 
+    /* background-image: url(new_floor_plan.png); */
 
 }
 
@@ -433,5 +433,27 @@ so the button sizes change when we resize the window */
     height: 8%;
     top: 4%;
     right: 11%;
+    border: transparent;
+}
+
+/* stairs */
+
+/* .stairs.active{
+    background:red;
+    color: white;
+    width: 5%;
+    height: 8%;
+    top: 4%;
+    right: 11%;
+    border: transparent;
+} */
+.stairs{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 4%;
+    height: 20%;
+    top: 77%;
+    right: 56%;
     border: transparent;
 }

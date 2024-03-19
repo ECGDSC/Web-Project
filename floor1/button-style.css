@@ -14,7 +14,7 @@ so the button sizes change when we resize the window */
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
-    background-image: url(new_floor_plan.png);
+    /* background-image: url(new_floor_plan.png); */
 
 }
 
@@ -45,4 +45,8 @@ so the button sizes change when we resize the window */
     font-family: "Courier New", monospace;
     font-weight: 900;
     font-size: 20px;
+}
+
+.stair_color{
+    background-color: rgb(222, 164, 231)
 }
