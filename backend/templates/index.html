@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="room-web-backend-example" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .room {
+                color: white;
+                /* background-color: green; */
+                padding: 15px 32px;
+                font-size: 16px;
+            } 
+        </style>
+    </head>
+    <body>
+        <button onclick="changeStatus()" class="room" id="211">211</button> 
+        <button onclick="changeStatus()" class="room" id="212">212</button> 
+        <button onclick="changeStatus()" class="room" id="213">213</button> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                // fetch all room status
+                $.ajax({
+                    // url for API request which gets all data from database
+                    url: 'http://localhost:5000/api/all',
+                    type: 'GET',
+                    // result contains the info fetched by api
+                    success: function(result) {
+                        for (const [i, status] of Object.entries(result)) {
+                            var roomId = status[0];
+                            var roomStatus = status[1];
+                            roomButton = document.getElementById(roomId);
+                            console.log(roomStatus);
+                            if (roomStatus == 1) {
+                                roomButton.style.backgroundColor = 'red';
+                            } else {
+                                roomButton.style.backgroundColor = 'green';
+                            }
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+    
+</html>
