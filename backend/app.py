@@ -13,15 +13,16 @@ def initialize_database():
 
 # opens a connection to the user_database.db database
 def get_db_connection():
-    # call the function that initializes the database
     initialize_database()
     conn = sqlite3.connect("rooms.db")
     return conn
 
-@app.route("/", methods=["GET"])
+# this is the root (landing page)
+@app.route("/")
 def index():
     return render_template("index.html")
 
+# api route that accesses database to retreive all room status
 @app.route("/api/all", methods=["GET"])
 def getAll():
     conn = get_db_connection()
