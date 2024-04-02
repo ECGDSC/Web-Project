@@ -27,11 +27,17 @@ so the button sizes change when we resize the window */
 }
 
 .change_color{
-    background-color: rgb(85, 194, 85)
+    background-color: rgb(46, 138, 46)
 }
 
 .hover_border:hover {
     background-color: rgb(231, 238, 231); 
+    color: black; 
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.hover_border.active:hover {
+    background-color: rgb(239, 186, 186); 
     color: black; 
     border: 2px solid rgb(0, 0, 0);
 }
