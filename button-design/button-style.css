@@ -19,7 +19,7 @@ so the button sizes change when we resize the window */
 }
 
 .round{
-    border-radius: 70%;
+    border-radius: 100%;
 }
 
 .hover_border:hover {
