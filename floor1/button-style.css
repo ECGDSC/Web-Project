@@ -56,3 +56,9 @@ so the button sizes change when we resize the window */
 .stair_color{
     background-color: rgb(222, 164, 231)
 }
+
+.vertical{
+writing-mode:vertical-lr;
+text-orientation: upright;
+
+}

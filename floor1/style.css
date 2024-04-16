@@ -89,7 +89,7 @@ so the button sizes change when we resize the window */
 .Table_1.active{
     background:red;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 13%;
@@ -99,7 +99,7 @@ so the button sizes change when we resize the window */
     position: absolute;
     background: green;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 13%;
@@ -111,7 +111,7 @@ so the button sizes change when we resize the window */
 .Table_2.active{
     background:red;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 8%;
@@ -121,7 +121,7 @@ so the button sizes change when we resize the window */
     position: absolute;
     background: green;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 8%;
@@ -133,7 +133,7 @@ so the button sizes change when we resize the window */
 .Table_3.active{
     background:red;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 3.5%;
@@ -143,7 +143,7 @@ so the button sizes change when we resize the window */
     position: absolute;
     background: green;
     color: white;
-    width: 2%;
+    width: 3%;
     height: 14%;
     top: 15%;
     right: 3.5%;
@@ -194,7 +194,7 @@ so the button sizes change when we resize the window */
     border: transparent;
 }
 
-/* Room ? */
+/* Room 103 */
 
 .Question_Mark.active{
     background:red;
@@ -378,7 +378,7 @@ so the button sizes change when we resize the window */
     width: 5%;
     height: 8%;
     top: 4%;
-    right: 2%;
+    right: 0.5%;
     border: transparent;
 }
 .Table_4{
@@ -388,7 +388,7 @@ so the button sizes change when we resize the window */
     width: 5%;
     height: 8%;
     top: 4%;
-    right: 2%;
+    right: 0.5%;
     border: transparent;
 }
 
@@ -422,7 +422,7 @@ so the button sizes change when we resize the window */
     width: 5%;
     height: 8%;
     top: 4%;
-    right: 11%;
+    right: 11.5%;
     border: transparent;
 }
 .Table_6{
@@ -432,7 +432,7 @@ so the button sizes change when we resize the window */
     width: 5%;
     height: 8%;
     top: 4%;
-    right: 11%;
+    right: 11.5%;
     border: transparent;
 }
 
@@ -453,7 +453,7 @@ so the button sizes change when we resize the window */
     color: white;
     width: 4%;
     height: 20%;
-    top: 77%;
+    top: 76%;
     right: 56%;
     border: transparent;
 }
