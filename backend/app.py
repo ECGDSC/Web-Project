@@ -1,9 +1,9 @@
-import sqlite3
 from flask import Flask, render_template, jsonify, request
+import sqlite3
 
 app = Flask(__name__)
 
-# initialize database
+# Database initialization separated from connection function
 def initialize_database():
     conn = sqlite3.connect("rooms.db")
     with open("roomsdb.sql") as f:
@@ -11,70 +11,54 @@ def initialize_database():
     conn.commit()
     conn.close()
 
-# opens a connection to the user_database.db database
+# Connection to the database
 def get_db_connection():
-    initialize_database()
-    conn = sqlite3.connect("rooms.db")
-    return conn
+    return sqlite3.connect("rooms.db")
 
-# this is the root (landing page)
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# api route that accesses database to retreive all room status
-@app.route("/api/all", methods=["GET"])
+@app.route("/api/get/all", methods=["GET"])
 def getAll():
     conn = get_db_connection()
     cursor = conn.cursor()
-    all_status = conn.execute("SELECT id, status FROM rooms").fetchall()
-    return all_status
-#Starthere (Make Post and Get route, something more effecient, something that only gets one room, rather than the whole three floors)
-#api route that accesses databases to store/change a room status
+    all_status = cursor.execute("SELECT id, status FROM rooms").fetchall()
+    all_status_list = [{"id": row[0], "status": row[1]} for row in all_status]
+    conn.close()
+    return jsonify(all_status_list)
 
-@app.route("/api/all", methods=["POST"])
+@app.route("/api/get/<int:room_id>", methods=["GET"])
+def get_status(room_id):
+    conn = get_db_connection()
+    try:
+        status_row = conn.execute("SELECT status FROM rooms WHERE id = ?", (room_id,)).fetchone()
+        if status_row:
+            return jsonify({"id": room_id, "status": status_row[0]})
+        else:
+            return jsonify({"id": room_id, "status": "not found"}), 404
+    finally:
+        conn.close()
 
-## https://stackoverflow.com/questions/51057966/flask-toggle-button-with-dynamic-label 
-#@app.route("/api/all", methods=""
-#https://github.com/scotty3785/pi_tv_remote/blob/master/templates/remote.html
-## Think about how to update it periodically, if two people open on the same time and one of them checks a room, how would it immediately show to somebody else? 
-#import other stuff flask 
-# API route to get the status of a specific room
-
-# API route to get the status of a specific room
-@app.route("/api/room/<int:room_id>", methods=["GET"])
-def get_room(room_id): 
-    conn = get_db_connection()          # connect to db
-    cursor = conn.cursor()              # Create a cursor, to exectue SQL commands
-    cursor.execute("SELECT id, status FROM rooms WHERE id = ?", (room_id,))  # SQL command to fetch the room status by ID.
-    room_status = cursor.fetchone()     # Fetch the first row of the results.
-    conn.close()                        # Close connection.
-    if room_status:
-        return jsonify({'id': room_status[0], 'status': room_status[1]})  # convert the room status to JSON format and return it.
-    else:
-        return jsonify({'message': 'Room not found'}), 404  # Return a JSON response indicating room not found, 404.
-
-# API route to update the status of a specific room
-@app.route("/api/room/<int:room_id>", methods=["POST"])
-def update_room(room_id):
-    if 'status' in request.form:        # check if 'status' is provided in the form data of the request.
-        new_status = request.form['status']  # retrieve the 'status' value from form.
-        conn = get_db_connection()      # establish a db connection.
-        cursor = conn.cursor()          # create cursor.
-        cursor.execute("UPDATE rooms SET status = ? WHERE id = ?", (new_status, room_id))  # SQL command to update the room status.
-        conn.commit()                   # Commit the change.
-        conn.close()                    # close db connection.
-        return jsonify({'message': 'Room status updated'})  # straightforward.
-    else:
-        return jsonify({'message': 'Invalid request'}), 400  # Return a JSON 400 error.
-#def get one room or one floor
-#db, dictionary
-#def method to change state and update it 
-#check if room is unavailable, if not, make it unavailable
-#ask for password, use the same password for making it available
-
-
-## Live update
+@app.route("/api/update/<int:room_id>", methods=["POST"])
+def update_status(room_id):
+    new_status = int(request.json['status'])
+    conn = get_db_connection()
+    try:
+        cursor = conn.cursor()
+        cursor.execute("UPDATE rooms SET status = ? WHERE id = ?", (new_status, room_id))
+        conn.commit()
+        if cursor.rowcount == 0:
+            print(f"No rows were updated for room {room_id}. Check if room ID exists.")
+        else:
+            print(f"Room {room_id} updated to status {new_status}.")
+        return jsonify({"success": True, "status": new_status})
+    except Exception as e:
+        conn.rollback()
+        print(f"Error updating room {room_id}: {e}")
+        return jsonify({"success": False, "error": str(e)}), 500
+    finally:
+        conn.close()
 
 if __name__ == '__main__':
     app.run(debug=True, host="localhost")                        
