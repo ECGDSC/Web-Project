@@ -1,0 +1,344 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make this div the entire page so the button can use the percentage of the page's size
+so the button sizes change when we resize the window */
+#Floor{
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+}
+
+/* Room 317 */
+
+.Room_317.active{
+    background:red;
+    color: white;
+    width: 11.8%;
+    height: 46%;
+    top: 5%;
+    left: 1.6%;
+    border: transparent;
+}
+.Room_317{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 11.8%;
+    height: 46%;
+    top: 5%;
+    left: 1.6%;
+    border: transparent;
+}
+
+/* Room 315 */
+
+.Room_315.active{
+    background:red;
+    color: white;
+    width: 19.2%;
+    height: 29.7%;
+    top: 5.0%;
+    left: 15.6%;
+    border: transparent;
+}
+.Room_315{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 19.2%;
+    height: 29.7%;
+    top: 5.0%;
+    left: 15.6%;
+    border: transparent;
+}
+
+/* Room 318 */
+
+.Room_318.active{
+    background:red;
+    color: white;
+    width: 14%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 1.6%;ß
+    border: transparent;
+}
+.Room_318{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 14%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 1.6%;
+    border: transparent;
+}
+
+/* Room 302 */
+
+.Room_302.active{
+    background:red;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 57%;
+    border: transparent;
+}
+.Room_302{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 57%;
+    border: transparent;
+}
+/* Room 303 */
+
+.Room_303.active{
+    background:red;
+    color: white;
+    width: 11.6%;
+    height: 32%;
+    top: 5%;
+    left: 57%;
+    border: transparent;
+}
+.Room_303{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 11.6%;
+    height: 32%;
+    top: 5%;
+    left: 57%;
+    border: transparent;
+}
+/* Room 314 */
+
+.Room_314.active{
+    background:red;
+    color: white;
+    width: 10.5%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 26.5%;
+    border: transparent;
+}
+.Room_314{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 10.5%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 26.5%;
+    border: transparent;
+}
+
+/* Room 300 */
+
+.Room_300.active{
+    background:red;
+    color: white;
+    width: 20%;
+    height: 78%;
+    top: 5%;
+    left: 79%;
+    border: transparent;
+}
+.Room_300{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 20%;
+    height: 78%;
+    top: 5%;
+    left: 79%;
+    border: transparent;
+}
+/* Room 316 */
+
+.Room_316.active{
+    background:red;
+    color: white;
+    width: 7.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 17.3%;
+    border: transparent;
+}
+.Room_316{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 7.3%;
+    height: 37.5%;
+    bottom: 4.7%;
+    left: 17.3%;
+    border: transparent;
+}
+/* Room 308 */
+
+.Room_308.active{
+    background:red;
+    color: white;
+    width: 9.4%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 41.6%;
+    border: transparent;
+}
+.Room_308{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 9.4%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 41.6%;
+    border: transparent;
+}
+/* Room 304 */
+
+.Room_304.active{
+    background:red;
+    color: white;
+    width: 4.7%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 57%;
+    border: transparent;
+}
+.Room_304{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 4.7%;
+    height: 15.2%;
+    bottom: 4.7%;
+    left: 57%;
+    border: transparent;
+}
+/* Room 312 */
+
+.Room_312.active{
+    background:red;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 41.5%;
+    border: transparent;
+}
+.Room_312{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 41.5%;
+    border: transparent;
+}
+/* Room 310 */
+
+.Room_310.active{
+    background:red;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 47%;
+    border: transparent;
+}
+.Room_310{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 3.9%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 47%;
+    border: transparent;
+}
+/* Study booth 1 */
+
+.Study_booth_1.active{
+    background:red;
+    color: white;
+    width: 4.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 52%;
+    border: transparent;
+}
+.Study_booth_1{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 4.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 52%;
+    border: transparent;
+}
+/* Study booth 2 */
+
+.Study_booth_2.active{
+    background:red;
+    color: white;
+    width: 4.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 62%;
+    border: transparent;
+}
+.Study_booth_2{
+    position: absolute;
+    background: green;
+    color: white;
+    width: 4.4%;
+    height: 15%;
+    bottom: 26.5%;
+    left: 62%;
+    border: transparent;
+}
+/*.lngbtn:before {
+     content:"";
+       transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    background-color: #f4d046;
+    width:38px;
+    height:39px;
+    top: 5.3px;
+    right: 85%;
+    position:absolute;
+    border-radius:6px;
+    z-index:-1;
+    
+    .lngbtn:after {
+       content:"";
+       transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    background-color: #f4d046;
+    width:38px;
+    height:39px;
+    top: 5.3px;
+    */
