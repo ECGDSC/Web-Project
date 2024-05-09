@@ -17,9 +17,9 @@
         </style>
     </head>
     <body>
-        <button onclick="changeStatus()" class="room" id="211">211</button> 
-        <button onclick="changeStatus()" class="room" id="212">212</button> 
-        <button onclick="changeStatus()" class="room" id="213">213</button> 
+        <button onclick="changeStatus(this)" class="room" id="211">211</button> 
+        <button onclick="changeStatus(this)" class="room" id="212">212</button> 
+        <button onclick="changeStatus(this)" class="room" id="213">213</button>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         
@@ -27,24 +27,55 @@
             // runs at load
             $(document).ready(function() {
                 $.ajax({
-                    // url for API request which gets all data from database
-                    url: 'http://localhost:5000/api/all',
+                    url: 'http://localhost:5000/api/get/all',
                     type: 'GET',
-                    success: function(result) { // result contains the info fetched by api
-                        for (const [i, status] of Object.entries(result)) {
-                            var roomId = status[0];
-                            var roomStatus = status[1];
-                            roomButton = document.getElementById(roomId);
-                            console.log(roomStatus); // testing if room status was retrieved correctly
+                    success: function(result) {
+                        result.forEach(function(status) {
+                            var roomId = status.id.toString();
+                            var roomStatus = status.status;
+                            var roomButton = document.getElementById(roomId);
                             if (roomStatus == 1) {
                                 roomButton.style.backgroundColor = 'red';
                             } else {
                                 roomButton.style.backgroundColor = 'green';
                             }
-                        }
+                        });
                     }
-                })
-            })
+                });
+            });
+
+            function changeStatus(button) {
+                var roomId = button.id;  
+
+                console.log("Room ID: " + roomId);  
+
+                $.getJSON(`/api/get/${roomId}`, function(data) {
+                    var currentStatus = parseInt(data.status);
+                    var newStatus = (currentStatus === 1 ? 0 : 1);  
+
+                    console.log("Current status: " + currentStatus + ", New status: " + newStatus);
+
+                    $.ajax({
+                        url: `/api/update/${roomId}`,
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify({status: newStatus}),
+                        success: function(response) {
+                            console.log("Response from server:", response);
+                            if (response.success) {
+                                button.style.backgroundColor = response.status === 1 ? 'red' : 'green';
+                            } else {
+                                console.error("Status update was not successful.");
+                            }
+                        },
+                        error: function(xhr) {
+                            console.error("Update failed: ", xhr.responseText);
+                        }
+                    });
+                });
+            }
+                
+        
         </script>
     </body>
     
